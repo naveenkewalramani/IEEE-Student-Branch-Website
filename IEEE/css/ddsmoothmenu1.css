@@ -1,0 +1,89 @@
+.ddsmoothmenu{
+}
+
+.ddsmoothmenu ul{
+	margin-left: 200px;
+	list-style-type: none;
+	border-radius: 0 0 13px 13px;
+       -webkit-border-radius: 0 0 13px 13px;
+       -moz-border-radius: 0 0 13px 13px;
+}
+
+/*Top level list items*/
+.ddsmoothmenu ul li{
+	position: relative;
+	display: inline;
+	float: left;
+}
+
+/*Top level menu link items style*/
+.ddsmoothmenu ul li a {
+	display: block;
+	height: 35px;
+	padding: 0 20px;
+	line-height: 35px;
+	font-size: 14px;
+	margin-right: 5px;
+	color: #fff;	
+	text-align: center;
+	text-decoration: none;
+	font-weight: 400;
+	outline: none;
+}
+
+* html .ddsmoothmenu ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+display: inline-block;
+}
+.ddsmoothmenu ul li a.selected, .ddsmoothmenu ul li a:hover { /*CSS class that's dynamically added to the currently active menu items' LI A element*/
+	background: rgb(100, 100, 100);
+	border-radius: 13px 13px 13px 13px;
+       -webkit-border-radius: 13px 13px 13px 13px;
+       -moz-border-radius: 13px 13px 13px 13px;
+}
+
+/*1st sub level menu*/
+.ddsmoothmenu ul li ul {
+	position: absolute;
+	width: 90%;
+	margin: 0;
+	padding: 10px 10px;
+	display: none; /*collapse all sub menus to begin with*/
+	visibility: hidden;
+	background: #dddddd;
+	border-left: 0;
+	border-right: 0;
+	color: #ccc;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.ddsmoothmenu ul li ul li{
+display: list-item;
+float: none;
+background: none;
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.ddsmoothmenu ul li ul li ul{
+top: 0;
+}
+
+/* Sub level menu links style */
+.ddsmoothmenu ul li ul li a{
+	font-weight: 500;
+	width: 120px; /*width of sub menus*/
+	margin: 0;
+	padding: 7px 2px;
+	height: 18px;
+	line-height: 18px;
+	font-size: 11px;
+	text-align: left;
+	background: none;
+	color: #666;
+}
+
+.ddsmoothmenu ul li ul li a.selected, .ddsmoothmenu ul li ul li a:hover {
+	color: #fff;
+}
+
+/* Holly Hack for IE \*/
+* html .ddsmoothmenu{height: 1%;} /*Holly Hack for IE7 and below*/
