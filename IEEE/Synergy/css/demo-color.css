@@ -1,0 +1,281 @@
+
+/* for demo colour 
+========================*/
+
+.demo-color-panel{
+	position:fixed;
+	display:block;
+	width:230px;
+	height:250px;
+	background:#e6e6e6;
+	top:130px;
+	left:-230px;
+	text-align:center;
+	z-index:99999999;
+	border:1px solid #fff;
+}
+.color-panel-box{
+	margin-top:20px;
+	padding:5px;
+	text-align:center;
+	margin-left: 15px;
+}
+.switcher-header {
+    margin-bottom: 25px;
+}
+.switcher-header h5{
+    background: #564B86;
+    color: #fff;
+    width: 150px;
+    padding: 14px;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 15px;
+}
+.spinner-button{
+	width:40px;
+	height:40px;
+	display:block;
+	background:#564B86;
+	position:absolute;
+	right:-40px;
+	top:35px;
+	z-index:999;
+	color:#fff;
+	padding-top:4px;
+	font-size:30px;
+    border: 1px solid #fff;
+}
+.spinner-button:hover{
+cursor:pointer;
+}
+.color-panel-box span{
+    width: 40px;
+    height: 40px;
+    display: block;
+    float: left;
+    margin-left: 15px;
+    border-radius: 10px 0px;
+    margin-bottom: 15px;
+}
+.color-panel-box span:hover{
+    border-radius: 0px 10px;
+	cursor:pointer;
+	transition:0.5s
+	
+}
+.main-color{
+	position:relative;
+}
+.main-color:after{
+    content: "";
+    width: 170px;
+    height: 1px;
+    background: #564B86;
+    position: absolute;
+    left: -13px;
+    top: -11px;
+}
+.main-color:before{
+    content: "";
+    width: 170px;
+    height: 1px;
+    background: #564B86;
+    position: absolute;
+    left: -13px;
+    top: 115px;
+}
+.color-panel-box span.main-color{
+	background-color:#564B86;
+}
+.color-panel-box span.blue-color{
+	background-color:#3498db;
+}
+.color-panel-box span.yellow-color{
+	background-color:#FFAE00;
+}
+.color-panel-box span.red-color{
+	background-color:#CD2F2E;
+}
+.color-panel-box span.black-color{
+	background-color:#0D1518;
+}
+.color-panel-box span.green-color{
+	background-color:green;
+}
+
+
+
+
+/* for main color 
+=============================*/
+/* for backgroundk */
+.main-color-bar .switcher-header h5, .main-color-bar .spinner-button{
+	background:#564B86;
+}
+
+
+
+/* for blue color 
+=============================*/
+/* for background */
+.blue-color-bar .switcher-header h5, .blue-color-bar .spinner-button, .blue-color-bar .main-color:before, .blue-color-bar .main-color:after{
+	background:#3498db;
+}
+
+.blue-color-bar .slider-overlay,  .blue-color-bar .youtuve-overlay, .blue-color-bar .team-overlay, .blue-color-bar .testimonial-overlay, .blue-color-bar .footer-overlay{
+	background:rgba(52,152,219,0.5 );
+}
+
+/* for color */
+.blue-color-bar #our-team p{
+c	olor:#fff;
+}
+.blue-color-bar  .submit-icon {
+	background:#fff;
+	color:#3498db;
+}
+.blue-color-bar .subscribe.form-control{
+	border-color:#fff;
+}
+
+
+
+
+
+
+/* for yellow color */
+/* for background */
+.yellow-color-bar .switcher-header h5, .yellow-color-bar .spinner-button, .yellow-color-bar .main-color:before, .yellow-color-bar .main-color:after{
+	background:#c7ce07;
+}
+.yellow-color-bar .slider-overlay,  .yellow-color-bar .youtuve-overlay, .yellow-color-bar .team-overlay, .yellow-color-bar .testimonial-overlay, .yellow-color-bar .footer-overlay{
+    background: rgba(213, 219, 52, 0.7);
+}
+/* for color */
+.yellow-color-bar #our-team p{
+	color:#fff
+}
+.yellow-color-bar  .submit-icon {
+	background:#c7ce07;
+	color:#fff;
+}
+.yellow-color-bar .subscribe.form-control{
+	border-color:#fff;
+}
+.yellow-color-bar .btn-effect:before{
+	background:#c7ce07;
+	color:#fff;
+}
+.yellow-color-bar .btn-start{
+	border:1px solid #c7ce07;
+}
+.yellow-color-bar .expertise-content i{
+	color:#c7ce07;
+}
+
+
+
+/* for red color 
+=======================*/
+/* for background */
+.red-color-bar .switcher-header h5, .red-color-bar .spinner-button, .red-color-bar .main-color:before, .red-color-bar .main-color:after{
+	background:#CD2F2E;
+}
+.red-color-bar .slider-overlay,  .red-color-bar .youtuve-overlay, .red-color-bar .team-overlay, .red-color-bar .testimonial-overlay, .red-color-bar .footer-overlay{
+    background: rgba(205, 47, 46, 0.7);
+}
+
+/* for color */
+.red-color-bar #our-team p{
+	color:#fff
+}
+.red-color-bar  .submit-icon {
+	background:#CD2F2E;
+	color:#fff;
+}
+.red-color-bar .subscribe.form-control{
+	border-color:#fff;
+}
+.red-color-bar .btn-effect:before{
+	background:#CD2F2E;
+	color:#fff;
+}
+.red-color-bar .btn-start{
+	order:1px solid #CD2F2E;
+}
+.red-color-bar .expertise-content i{
+	color:#CD2F2E;
+}
+
+
+
+
+
+/* for black color 
+=======================*/
+/* for background */
+.black-color-bar .switcher-header h5, .black-color-bar .spinner-button, .black-color-bar .main-color:before, .black-color-bar .main-color:after{
+	background:#75D975;
+}
+.black-color-bar .slider-overlay,  .black-color-bar .youtuve-overlay, .black-color-bar .team-overlay, .black-color-bar .testimonial-overlay, .black-color-bar .footer-overlay{
+    background: rgba(51, 50, 50, 0.7);
+}
+
+/* for color */
+.black-color-bar #our-team p{
+color:#fff
+}
+.black-color-bar  .submit-icon {
+background:#75D975;
+color:#fff;
+}
+.black-color-bar .subscribe.form-control{
+border-color:#fff;
+}
+.black-color-bar .btn-effect:before{
+background:#75D975;
+color:#fff;
+}
+.black-color-bar .btn-start{
+border:1px solid #75D975;
+}
+.black-color-bar .expertise-content i{
+color:#75D975;
+}
+
+
+
+
+
+/* for green color 
+=======================*/
+/* for background */
+.green-color-bar .switcher-header h5, .green-color-bar .spinner-button, .green-color-bar .main-color:before, .green-color-bar .main-color:after{
+	background:#75D975;
+}
+.green-color-bar .slider-overlay,  .green-color-bar .youtuve-overlay, .green-color-bar .team-overlay, .green-color-bar .testimonial-overlay, .green-color-bar .footer-overlay{
+    background: rgba(117, 217, 117, 0.7);
+}
+
+/* for color */
+.green-color-bar #our-team p{
+color:#fff
+}
+.green-color-bar  .submit-icon {
+background:#75D975;
+color:#fff;
+}
+.green-color-bar .subscribe.form-control{
+border-color:#fff;
+}
+.green-color-bar .btn-effect:before{
+background:#75D975;
+color:#fff;
+}
+.green-color-bar .btn-start{
+border:1px solid #75D975;
+}
+.green-color-bar .expertise-content i{
+color:#75D975;
+}
